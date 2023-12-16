@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter sign-up form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--
-        body vai ter uma cor de background e o container outra
-    -->
-    <div class="container"> <!--"caixa" que fica no meio da tela
-    onde ficam os conteúdos-->
+    <div class="container">
         <div class="container2">
             <div class="content">
                 <h1>Stay updated!</h1>
                 <p>Join 60,000+ product managers receiving monthly updates on:</p>
                 <ul>
-                    <li><img src="" alt="">Product discovery and building what matters</li>
-                    <li><img src="" alt="">Measuring to ensure updates are a success</li>
-                    <li><img src="" alt="">And much more!</li>
+                    <li><img src="./assets/images/icon-list.svg" alt="" class="list-img"><p class="list-text">Product discovery and building what matters</p></li>
+                    <li><img src="./assets/images/icon-list.svg" alt="" class="list-img"><p class="list-text">Measuring to ensure updates are a success</p></li>
+                    <li><img src="./assets/images/icon-list.svg" alt="" class="list-img"><p class="list-text">And much more!</p></li>
                 </ul>
-                <label for="email_address">Email address</label>
-                <input type="text" id="email" name="email">
-                <input type="submit">
+                <div class="label-container">
+                    <label for="email_address" class="label">Email address</label>
+                    <em></em>
+                </div>
+                <input type="text" id="email" name="email" placeholder="email@company.com">
+                <input type="button" value="Subscribe to monthly newsletter" class="button" onclick="validateEmail()">
             </div>
-            <div class="image">
-                <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+            <div id="container-image">
+                <div class="image">
+                    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+                </div>
             </div>
-            <!--
-            container2 pode ser dividido em outros dois containers menores
-            cada um ocupando metade do container2
-            -->
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
