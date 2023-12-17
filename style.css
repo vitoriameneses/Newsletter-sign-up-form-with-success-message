@@ -78,6 +78,31 @@ input {
     background: linear-gradient(90deg, rgba(253,29,94,1) 0%, rgba(252,176,69,1) 100%);
     box-shadow: 10px 10px 10px rgba(253, 29, 93, 0.493);
 }
-@media all and (max-width: 895px) { 
+@media all and (max-width: 516px) { 
+    #container-image .image img {
+        /* Mude o caminho da imagem para a versão mobile desejada */
+        content: url('./assets/images/illustration-sign-up-mobile.svg');
+    }
+    body{
+        background-color: white;
+
+    }
+    .container{
+        width: 100%;
+        border-radius: 0;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
         
+    }
+    .container-image{
+        width: 516px;
+        order: 1;
+        padding: 0;
+    }
+    .content{
+        width: 100%;
+        order: 2;
+    }
 }

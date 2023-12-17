@@ -34,10 +34,22 @@ p{
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
     font-weight: 700;
+    width: 400px;
 }
 .button:hover{
     cursor: pointer;
     transition-duration: .2s;
     background: linear-gradient(90deg, rgba(253,29,94,1) 0%, rgba(252,176,69,1) 100%);
     box-shadow: 10px 10px 10px rgba(253, 29, 93, 0.493);
+}
+@media all and (max-width: 516px) { 
+    body{
+        background-color: white;
+    }
+    .button{
+        margin-top: 300px;
+    }
+    p{
+        margin-top: 100px;
+    }
 }
